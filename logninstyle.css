@@ -109,14 +109,12 @@
     font-size: 25px;
   }
   .side .img > img {
-    /* position: absolute;
-    top: -60px;
-    left: 50px; */
     width: 140px;
     /* min-width: 50%; */
     height: 190px;
     border-radius: 10px;
     /* opacity: 20%; */
+    margin-top: -20px;
   }
 
   .content {
@@ -131,14 +129,28 @@
     /* z-index: 1; */
     /* border: 1px solid black; */
   }
-  .content .login > input {
+  .content .login {
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
     width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  .content .login > input {
+    width: 250px;
     border: none;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 0.9rem;
     z-index: 1;
     /* background: transparent; */
+  }
+  .content .login > input[type="submit"] {
+    width: 150px;
+    /* margin-left: 30px; */
+    background-color: #452b96;
+    color: white;
   }
 }
 @media (max-width: 425px) {
